@@ -9,7 +9,8 @@ import time
 example_input = torch.tensor([-0.35, 1.60], dtype = torch.float32)
 
 #Export to ONNX
-def onnxExport():      
+def onnxExport():  
+    model.eval()    
     onnx_program = torch.onnx.export(model, example_input, dynamo=True)
     onnx_program.optimize()
     onnx_program.save("testNN.onnx")

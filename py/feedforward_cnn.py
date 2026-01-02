@@ -20,7 +20,8 @@ print("G Channel 1:", image_np[0,1,:,:])
 print("B Channel 1:", image_np[0,2,:,:])
 
 #Export to ONNX
-def onnxExport():      
+def onnxExport():   
+    model.eval()   
     onnx_program = torch.onnx.export(model, example_input, dynamo=True)
     onnx_program.optimize()
     onnx_program.save("testCNN.onnx")
