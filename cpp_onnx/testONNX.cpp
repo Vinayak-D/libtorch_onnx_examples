@@ -114,7 +114,7 @@ int main(int argc, char* argv[]){
         output_shape.size()
     );    
 
-    // Run inference 100 times and time it
+    // Run inference 1000 times and time it
     std::cout << "Running model..." << "\n";
 
     auto start = std::chrono::high_resolution_clock::now();

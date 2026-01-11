@@ -1,5 +1,5 @@
-**Video WalkThrough**
-- Coming soon
+**Video Tutorial**
+[Here](https://www.youtube.com/watch?v=Fxb9QSjrqsI) is the Youtube link!
 
 **Dependencies** (use pip for Python packages, be sure to install the correct CPP packages based on your OS!):
 - CPP: [LibTorch](https://pytorch.org/) C++ Library - OS dependent 

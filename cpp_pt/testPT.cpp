@@ -77,7 +77,7 @@ int main(int argc, char* argv[]){
     std::vector<torch::jit::IValue> inputs;
     inputs.push_back(input_tensor);
 
-    // Run inference 100 times and time it
+    // Run inference 1000 times and time it
     torch::Tensor output;
     auto start = std::chrono::high_resolution_clock::now();
     for (int i = 0; i < 1000; ++i){

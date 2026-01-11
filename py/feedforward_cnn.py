@@ -52,7 +52,6 @@ model = torch.nn.Sequential(
     torch.nn.Flatten(),
     # # Last layer (6)
     torch.nn.Linear(144, 6),
-    # # Softmax activation (multiclass)
     torch.nn.Sigmoid()   
     )
 
@@ -68,7 +67,7 @@ x = image_np
 
 ort_sess = ort.InferenceSession('testCNN.onnx')
 
-#Time 100 inference runs
+#Time 1000 inference runs
 start_time = time.perf_counter()
 
 for i in range(1000):

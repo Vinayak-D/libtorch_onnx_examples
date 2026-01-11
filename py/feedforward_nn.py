@@ -58,7 +58,7 @@ print ("Inference: ", model(test_input))
 x = np.random.rand(2).astype(np.float32)
 ort_sess = ort.InferenceSession('testNN.onnx')
 
-#Time 100 inference runs
+#Time 1000 inference runs
 start_time = time.perf_counter()
 for i in range(1000):
     outputs = ort_sess.run(None, {'input': x})
